@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Admin — Lubex</title>
+  <link rel="stylesheet" href="/webapp/styles.css">
+</head>
+<body>
+  <div style="max-width:900px;margin:20px auto;padding:12px">
+    <h2>Admin Dashboard</h2>
+    <div id="admin-login">
+      <label>Admin token</label>
+      <input id="admin-token" placeholder="Enter admin token" style="width:100%;padding:8px;margin:6px 0"/>
+      <button id="login-btn" class="btn">Login</button>
+    </div>
+    <div id="admin-panel" class="hidden">
+      <div style="display:flex;gap:12px;margin-top:12px">
+        <button id="add-prod" class="btn">Add product</button>
+        <button id="refresh" class="btn ghost">Refresh</button>
+      </div>
+      <div id="admin-products" style="margin-top:12px"></div>
+      <h3>Orders</h3>
+      <div id="admin-orders"></div>
+    </div>
+  </div>
+<script src="/webapp/admin.js"></script>
+</body>
+</html>
